@@ -1,5 +1,8 @@
-html, body { font-size: 16px; } 
-/*Setting the root size*/
+html, body { 
+    font-size: 14px; 
+    /*Setting the root size*/
+    font-family: Arial, Helvetica, sans-serif;
+} 
 
 html, body * {
     padding: 0;
@@ -11,11 +14,37 @@ section {
 }
 table {
     border-collapse: collapse;
+    width: 80%;
 }
 table tr td, table tr th {
-    border: 1px solid black;
-    padding: 12px;
+    border: 2px solid #FFF;
+    padding: 0 8px 0 8px;
+    height: 40px;
 }
+table tr th {
+    background-color: #4472C4;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 44px;
+    font-size: 1.2rem;
+}
+table tr:nth-child(even) {
+    background: #D9E1F2;
+}
+table tr:nth-child(odd) {
+    background: #B4C6E7;
+}
+table tr:hover {
+    background: #FFF;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #4472C4;
+}
+table tr td:hover {
+    border-bottom: 2px solid #4472C4;
+}
+
+/* tr:nth-child(3n)  -- will apply the every third list item */
+
 ul li {
     list-style-type: none;
 }
