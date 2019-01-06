@@ -4,17 +4,63 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 } 
 
-html, body * {
+html, body, body * {
     padding: 0;
+    /* padding: <top> <right> <bottom> <left>; */
     margin: 0;
     border: 0;
+}
+a:visited {
+    color: #000;
+}
+article {
+    margin: 0 1em;
+}
+footer {
+    margin-top: 30px;
+    background: black;
+    height: 130px;
+    color: #FFF;
+    padding-left: 2em; 
+}
+footer a {
+    border-style: none;
+    border-radius: 20px;
+    background-color: crimson;
+    padding: 18px 22px;
+    font-size: 1.4em;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 130px;
+}
+footer a:hover {
+    background-color: rgb(197, 10, 47);
+}
+h3 {
+    font-size: 2em;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 3px #575757;
+}
+header {
+    background-image: url("../img/back_03.jpg");
+    height: 200px;
+    padding: 2em;
+    background-size: cover;
+}
+header h1 {
+    color: #FFF;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #FFF;
+}
+h1, h3 {
+    text-decoration: underline;
 }
 section {
     margin: 2rem 0 2rem 0;
 }
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
 }
 table tr td, table tr th {
     border: 2px solid #FFF;
@@ -22,6 +68,7 @@ table tr td, table tr th {
     height: 40px;
 }
 table tr th {
+    /* background: transparent; */
     background-color: #4472C4;
     color: #FFFFFF;
     font-weight: bold;
@@ -52,5 +99,28 @@ ul li img {
     border: 7px solid black;
     padding: 7px;
     width: 500px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+#Gretzky {
+    border-style: dashed;
+}
+#Rohn {
+    border: 7px inset #969696;
+}
+#Hill {
+    border-radius: 20px;
+}
+#Jobs {
+    border: none;
+    box-shadow: 1px 1px 3px #000;
+}
+#github {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+.actually {
+    display: inline-block;
+    margin: 30px;
 }
