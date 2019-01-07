@@ -1,0 +1,51 @@
+html, body { 
+    font-size: 14px; 
+    /*Setting the root size*/
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+html, body, body * {
+    padding: 0px;
+    /* padding: <top> <right> <bottom> <left>; */
+    margin: 0px;
+    border: 0px;
+}
+/* Flex container */
+img {
+    /* width: 300px; */
+    width: 100%;
+}
+section {
+    /* flex: 1; */
+    /* margin: 1em; */
+    max-width: 480px;
+}
+/* .second {
+    flex: 2;
+} */
+#flex-container { 
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 4em;
+    /* min-height: 100vh; */
+}
+#flex-container > * {
+    min-width: 300px;
+    border: 1px solid blue;
+/* flex:1 determines the relative growth of an item, with a smaller number meaning less relative growth than a larger number. */
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+/* set the width to be 100 percent of the viewport width.  */
+#flex-container header, #flex-container footer {
+    flex: 0 1 100vw;
+} 
+/* remove header and footer from flexbox container */
+/* size header and footer to be full width and 100px tall each */
+/* header,
+footer {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100px;
+} */
